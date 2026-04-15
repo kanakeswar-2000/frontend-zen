@@ -1,0 +1,109 @@
+header {
+  margin-top: 15px;
+  background-color: #282828;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 402px;
+}
+
+p {
+  height: 50px;
+  width: 380px;
+  font-size: 40px;
+  text-align: right;
+  overflow: auto;
+}
+
+.num_pad {
+  border: 1px solid grey;
+  height: 450px;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.num_col {
+  /*height: 100%;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.btn {
+  height: 60px;
+  width: 70px;
+  font-size: 20px;
+  border: 1px solid lightgrey;
+  background-color: #F1F2F0;
+  border-radius: 3px;
+}
+
+.equal_btn {
+  flex-grow: 0.79;
+  color: black;
+  background-color: #0086b3;
+}
+
+.btn_ac {
+  background-color: #ff6666;
+}
+
+.operator_btn {
+  color: #008CD4;
+}
+
+
+
+
+
+
+
+
+/*Animation part*/
+
+@-webkit-keyframes btn {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes btn {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  -webkit-animation-name: btn;
+  animation-name: btn;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}

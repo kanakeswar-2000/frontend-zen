@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Todo</title>
+    <link rel="stylesheet" href="todo-list.css" />
+  </head>
+
+  <body>
+    <p class="app-name">todos</p>
+    <div class="root-div" spellcheck="false">
+
+      <div class="searchBar-container">
+        <p><i class="fa fa-angle-down arrow-down"></i></p>
+        <input id="addTodoBar" type="text" placeholder="What needs to be done ?">
+      </div>
+      <ul class="todo-items-container" id="todosContainer">
+
+        <li class="todo-item" id="todoItem">
+          <input class="checkbox" name="checkbox" type="checkbox"></input>
+          <p contenteditable="true" class="todo-name" id="todoName"></p>
+          <button class="remove-btn" name="removeBtn" type="button">&times;</button>
+        </li>
+      </ul>
+      <div class="extra-functions" id="extraFunctionalities">
+        <p id="noOfItems"></p>
+        <div>
+          <button id="allBtn">All</button>
+          <button id="activeBtn">Active</button>
+          <button id="completedBtn">Completed</button>
+        </div>
+        <button id="clearCompletedBtn">Clear Completed</button>
+      </div>
+
+    </div>
+
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <script src="todo-list.js"></script>
+  </body>
+
+</html>

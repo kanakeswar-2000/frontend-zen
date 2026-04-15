@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body id="console-root">
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+        <script>
+            let array = [1, 2, 3, 4, 5, 6];
+
+            alert(removeElementsFromArray(array, 2, 3));
+
+
+            function removeElementsFromArray(arr, start_index, count) {
+                arr.splice(start_index, count);
+                return arr;
+            }
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script>
+            let marks = parseFloat(prompt("enter marks"));
+
+            alert(getType(marks));
+
+            function getType(marks) {
+
+                if (marks < 35 && marks >= 0) {
+                    return 'Fail';
+                }
+                else if (marks >= 35 && marks <= 50) {
+                    return 'D';
+                }
+                else if (marks <= 60 && marks > 50) {
+                    return "C";
+                }
+                else if (marks <= 70 && marks > 60) {
+                    return "B";
+                }
+                else if (marks <= 80 && marks > 70) {
+                    return "A";
+                }
+                else if (marks > 80 && marks <= 100) {
+                    return "Distinction";
+                }
+                else {
+                    return "Invalid marks";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>

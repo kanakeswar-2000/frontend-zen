@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body id="console-root">
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+        <script>
+            let obj = {
+                name: "venkaty",
+                age: 20
+            }
+
+            alert(displayPropertyNames(obj));
+
+
+            function displayPropertyNames(obj) {
+
+                let property_array = Object.keys(obj);
+
+                return property_array;
+
+            }
+        </script>
+
+    </body>
+
+</html>

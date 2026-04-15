@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body id="console-root">
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+        <script>
+            let myObject = {
+                height: 43,
+                width: 22,
+                rectangle: [22, 33],
+            };
+            let array = [23, 43, 54, 3, 5, 7, -34];
+
+            myObject.addition = addition(array);
+
+            console.log(myObject);
+
+            function addition(array) {
+
+                let sum = 0;
+                while (array.length > 0) {
+                    sum += array.pop();
+                }
+                console.log(sum);
+                return sum;
+            }
+        </script>
+
+    </body>
+
+</html>

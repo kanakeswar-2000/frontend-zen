@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body id="console-root">
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+        <script>
+            let n1 = parseInt(prompt("Enter the number:"));
+
+            alert(factorialOfNumber(n1));
+
+
+            function factorialOfNumber(num) {
+
+                if (num == 1) {
+                    return 1;
+                }
+                else {
+                    return num * factorialOfNumber(num - 1);
+                }
+
+            }
+        </script>
+
+    </body>
+
+</html>

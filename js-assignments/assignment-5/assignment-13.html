@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body id="console-root">
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+        <script>
+            let n1 = parseInt(prompt());
+
+            alert(sumNumberOfDigits(n1));
+
+
+            function sumNumberOfDigits(num) {
+
+                let sum = 0;
+                if (num == 0) {
+                    return 0;
+                }
+                else if (num < 0) {
+                    num = Math.abs(num);
+                }
+                while (num >= 1) {
+
+                    let digit = num % 10;
+                    num = Math.floor(num / 10);
+                    console.log(num);
+                    sum += digit;
+                }
+                return sum;
+
+            }
+        </script>
+
+    </body>
+
+</html>

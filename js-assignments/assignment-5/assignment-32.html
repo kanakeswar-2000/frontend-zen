@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body id="console-root">
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+        <script>
+            let myobj = { a: '1', b: '2', c: '3' };
+
+            addProperty(myobj, 'd', '4');
+            console.log(myobj);
+
+            function addProperty(obj, key, value) {
+                obj[key] = value;
+            }
+        </script>
+
+    </body>
+
+</html>

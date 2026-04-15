@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body id="console-root">
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+        <script>
+            let user = {
+                name: 'Kenneth',
+                age: 28,
+                data: {
+                    username: 'kennethCodesAllDay',
+                    joinDate: 'March 26, 2016',
+                    organization: 'facebook',
+                    friends: ['Sam', 'Kira', 'Tomo'],
+                    location: {
+                        city: 'San Francisco',
+                        state: 'CA',
+                        country: 'USA'
+                    }
+                }
+            };
+            addProperty(user);
+            console.log(user);
+
+            function addProperty(obj) {
+
+                obj.data.friends.push('ram');
+            }
+        </script>
+
+    </body>
+
+</html>

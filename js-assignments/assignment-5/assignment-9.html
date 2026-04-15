@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script>
+            let input = prompt();
+
+            alert(isAlphabet(input));
+
+            function isAlphabet(str) {
+                if (str.length > 1) {
+                    return 'Invalid input';
+                }
+                else if (str >= "A" && str <= 'Z' || str >= "a" && str <= "z") {
+                    return isVowelOrConsonant(str);
+                }
+                else {
+                    return 'Invalid input';
+                }
+            }
+
+
+            function isVowelOrConsonant(input) {
+
+                let vowels = /[aeiouAeiou]/; //regex for vowels
+
+                if (vowels.test(input)) {
+                    return 'Vowel';
+                }
+                else {
+                    return 'Consonant';
+                }
+
+            }
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>

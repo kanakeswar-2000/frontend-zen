@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body id="console-root">
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+        <script>
+            let myobj = { a: '1', b: '2', c: '3' };
+
+            deleteProperty(myobj, 'c');
+            console.log(myobj);
+
+            function deleteProperty(obj, key) {
+                delete obj[key];
+            }
+        </script>
+
+    </body>
+
+</html>

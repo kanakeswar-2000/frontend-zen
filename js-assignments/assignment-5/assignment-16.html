@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body id="console-root">
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+        <script>
+            let num = parseInt(prompt("Enter the num:"));
+
+            alert(isPerfectNumbber(num));
+
+
+            function isPerfectNumbber(num) {
+
+                let sum_of_factors = 0;
+                let dup_num = num;
+                num -= 1;
+                while (num > 0) {
+                    if (dup_num % num == 0) {
+                        sum_of_factors += num;
+                    }
+                    num -= 1;
+                }
+                // if (dup_num == sum_of_factors)
+                //     return 'Perfect number';
+                // else
+                //   return 'Not a perfect number';
+
+                return (dup_num == sum_of_factors) ? 'Perfect number' : 'Not a perfect number';
+
+
+            }
+        </script>
+
+    </body>
+
+</html>

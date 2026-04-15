@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body id="console-root">
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+        <script>
+            let num_array = [12, 19, 2, 25, 9, 1];
+
+            alert(getSmallestNumberFromArray(num_array));
+
+
+            function getSmallestNumberFromArray(num_array) {
+                let min = num_array[0];
+                num_array.forEach(num => { num > min ? min : (min = num) })
+                return min;
+            }
+        </script>
+
+    </body>
+
+</html>

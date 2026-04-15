@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "zenith",
+			"path": "../../Code/zenith"
+		},
+		{
+			"name": "my frontend journey",
+			"path": "../../Code/my frontend journey"
+		},
+		{
+			"name": "venky-utils",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "my frontend journey"
+	}
+}

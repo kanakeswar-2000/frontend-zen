@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body id="console-root">
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+        <script>
+            let obj = {
+                name: "venkaty",
+                age: 20
+            }
+
+            alert(displayPropertyWithValue(obj));
+
+
+            function displayPropertyWithValue(obj) {
+
+                let keys_array = Object.keys(obj);
+                let i = 0;
+                let length = keys_array.length;
+                let key_val_array = [];
+                for (i = 0; i < length; i++) {
+                    key_val_array.push(`${keys_array[i]} ${obj[keys_array[i]]}`);
+                }
+                return key_val_array;
+
+            }
+        </script>
+
+    </body>
+
+</html>

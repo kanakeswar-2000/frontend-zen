@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script>
+            let light_col = prompt("enter number1");
+
+
+
+            alert(guidePedestrian(light_col.toLocaleLowerCase()));
+
+            function guidePedestrian(color) {
+
+                switch (color) {
+                    case 'red':
+                        return "Do not cross";
+
+                    case 'green':
+                        return 'Safe to cross';
+
+                    case 'orange':
+                        return 'Cross only if it is safe';
+
+                    default:
+                        return "Hola! You are not in junction"
+
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>

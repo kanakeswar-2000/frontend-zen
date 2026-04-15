@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body id="console-root">
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+        <script>
+            let n1 = parseInt(prompt());
+            let n2 = parseInt(prompt());
+
+            alert((n1 > n2 ? calculateGcd(n2, n1, n2) : calculateGcd(n1, n2, n1)));
+
+            function calculateGcd(num1, num2, iterator) {
+                if (num2 % iterator == 0 && num1 % iterator == 0) {
+                    return iterator;
+                }
+                else {
+                    return calculateGcd(num1, num2, iterator - 1);
+                }
+            }
+        </script>
+
+    </body>
+
+</html>
