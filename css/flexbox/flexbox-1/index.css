@@ -1,0 +1,32 @@
+.tech-container{
+    display:flex;
+    height:100vh;
+}
+.technology{
+    flex-grow:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.html{
+    background-color:blue;
+}
+.css{
+    background-color: pink;
+}
+.bootstrap{
+    background-color: bisque;
+
+}
+
+.js{
+    background-color: aqua;
+}
+.img{
+    width:100px;
+}
+@media (max-width:400px){
+    .img{
+        width:50px;
+    }
+}

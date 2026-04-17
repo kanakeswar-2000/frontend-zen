@@ -143,7 +143,7 @@ The plan below weaves these assignments into the schedule wherever they're relev
 
 #### Day 1 (Week 0) — Setup & Flexbox Fundamentals
 
-**Morning Block (2 hours) — Theory & Environment Setup**
+**Morning Block (2 hours) — Theory & Environment Setup**V
 - Install VS Code, set up Live Server extension
 - **Resources:**
   - Read: [MDN - Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML) (30 min)

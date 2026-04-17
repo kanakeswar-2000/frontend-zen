@@ -1,0 +1,62 @@
+.twitter-container{
+    display:flex;
+    padding:20px;
+    border:solid 1px black;
+    margin:10px;
+}
+.logo{
+    height:40px;
+    width:40px;
+    border-radius:100%;
+    margin-right:20px;
+}
+.text-container{
+    width:100%;
+}
+.name-time-dropdown-container{
+    display:flex;
+    align-items:center;
+     
+}
+.name-time-con{
+    display:flex;
+
+}
+.tick{
+    height:20px;
+}
+.dropdown{
+    height:20px;
+}
+.counts-container{
+    display:flex;
+    padding:20px;
+}
+.each-con{
+      
+}
+.icon{
+    height:20px;
+}
+.mobile-share-icon{
+    height:20px;
+}
+.desktop-share-icon{
+    height:20px;
+}
+@media (max-width:275px){
+    .desktop-share-icon{
+        display:none;
+    }
+}
+@media (min-width:276px){
+    .mobile-share-icon{
+        display:none;
+    }
+    .name-time-dropdown-container{
+        justify-content: space-between;
+    }
+    .counts-container{
+        justify-content:space-around;
+    }
+}
