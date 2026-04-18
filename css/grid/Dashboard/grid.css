@@ -1,0 +1,32 @@
+.dashboard{
+    display:grid;
+    background-color: aqua;
+    grid-template-areas: 
+        "header header"
+        "sidebar main-content"
+        "footer footer"
+    ;
+    height:100vh;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 15% 1fr 10%;
+}
+.header{
+    padding:20px;
+    border:solid 1px black;
+    grid-area:header;
+}
+.sidebar{
+    padding:20px;
+    border:solid 1px black;
+    grid-area:sidebar;
+}
+.main-content{
+    padding:20px;
+    border:solid 1px black;
+    grid-area:main-content;
+}
+.footer{
+    padding:20px;
+    border:solid 1px black;
+    grid-area:footer;
+}

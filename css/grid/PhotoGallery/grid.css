@@ -1,0 +1,23 @@
+.gallery{
+    display:grid;
+    grid-gap:10px 10px;
+    height:100vh;
+    grid-template-columns:repeat(4,1fr);
+}
+.photo{
+    padding:20px;
+    border:solid 1px black;
+    background-color:aqua;
+}
+
+@media (max-width:768px){
+    .gallery{
+    grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:480px){
+    .gallery{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
