@@ -1,0 +1,105 @@
+<!-- 1 hr -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css"/>
+  </head>
+  <body>
+     <div class="container-fluid">
+    <!-- Navbar -->
+        <div class="row">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#places">Places</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#footer">Footer</a>
+                </li>
+                
+            </ul>
+            </div>
+        </div>
+        </nav>
+        </div>
+
+    <!-- cards -->
+        <div class="row mt-5" id="cards">
+            <h1 class="col-12">Cards</h1>
+            <div class="card col-12 col-md-6 col-lg-3 m-2" style="width: 18rem;">
+            <img src="https://www.trodly.com/blog/wp-content/uploads/2018/10/wonderla-places-to-visit-bangalore.jpg" class="card-img-top" alt="wonderla">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>  
+
+            <div class="card col-12 col-md-6 col-lg-3 m-2" style="width: 18rem;">
+            <img src="https://www.trodly.com/blog/wp-content/uploads/2018/10/wonderla-places-to-visit-bangalore.jpg" class="card-img-top" alt="wonderla">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div> 
+
+            <div class="card col-12 col-md-6 col-lg-3 m-2" style="width: 18rem;">
+            <img src="https://www.trodly.com/blog/wp-content/uploads/2018/10/wonderla-places-to-visit-bangalore.jpg" class="card-img-top" alt="wonderla">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>  
+        </div>
+
+    <!-- Carousels-->
+        <div class="row mt-5" id="places">
+            <h1 class="col-12">Places to Visit</h1>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/vidhana-soudha-bangalore-karnataka-hero?qlt=82&ts=1742199603184" class="d-block w-100" alt="vidhana-soudha">
+            </div>
+            <div class="carousel-item">
+            <img src="https://www.trodly.com/blog/wp-content/uploads/2018/10/Places-To-Visit-In-Bangalore-1.jpg" class="d-block w-100" alt="fort">
+            </div>
+            <div class="carousel-item">
+            <img src="https://www.prestigesouthernstar.info/images/prestige/nandi-hills.webp" class="d-block w-100" alt="nandhi-hills">
+            </div>
+        </div>
+        </div>
+        </div>
+
+    <!-- footer -->
+        <div class="row my-5" id="footer">
+            <h1>Footer</h1>
+            <div class="bg-secondary text-white p-2">
+                <p>Address :</p>
+
+            </div>
+        </div>
+     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<!--
+  Mistakes :
+    margin utility not implemented
+    
+-->
