@@ -1,0 +1,148 @@
+body{
+    margin:0px;
+}
+.email-container{
+    min-height:100vh;
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow: 10px 0px 5px 0px gray;
+}
+.logo{
+    height:20px;
+    margin-left:10px;
+}
+.list-items-container{
+    list-style-type:none;
+    display:flex;
+}
+.list-item{
+    margin-right:20px;
+}
+.account-button{
+    background-color:blue;
+    color:white;
+    padding:5px;
+    border:0px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.landing-page{
+    display:flex;
+    justify-content: space-between;
+    padding:40px;
+    align-items:center;
+    background-color:whitesmoke;
+}
+.landing-image{
+    height:70vh;
+    width:50vw;
+}
+.experience-page{
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.experience-info-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.store-image{
+    height:50px;
+    width:100px;
+}
+.experience-image{
+    width:100vw;
+}
+.inbox-container{
+    display:flex;
+      
+}
+.box-1{
+    background-color: whitesmoke;
+    padding-top:40px;
+    padding-bottom:40px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-between;
+    height:400px;
+    width:50%;
+    margin:10px;
+}
+.stay-organised-image{
+    height:30%;
+    width:100%;
+}
+.action-container{
+    display:flex;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+.action-content{
+    padding-left:20px;
+    align-self:center;
+}
+.take-action-image{
+    width:50%;
+}
+.suspicious-container{
+    margin-top:40px;
+    margin-bottom:40px;
+    background-color:whitesmoke;
+    padding-top:40px;
+    padding-bottom:40px;
+    gap:30px;
+    display:flex;
+
+}
+.suspicious-image{
+    width:50%;
+}
+.suspicious-content{
+    align-self:center;
+}
+.account-creation-container{
+    display:flex;
+    padding:40px;
+    justify-content:center;
+    align-items:center;
+}
+.account-creation-content{
+    display:flex;
+    flex-direction:column;;
+    align-items:center;
+}
+.footer-container{
+    display:flex;
+    justify-content:space-around;
+    background-color: whitesmoke;
+    padding:10px;
+    align-items:center;
+}
+.footer-list-container{
+    display:flex;
+    list-style-type:none;
+}
+.block-1{
+    display:flex;
+}
+.block-2{
+    display:flex;
+}
+.language-input{
+    width:250px;
+    border:0px;
+    margin-left:20px;
+}
+.footer-item{
+    margin-right:10px;
+}
+.question-mark{
+    height:40px;
+    margin-right:20px;
+}
