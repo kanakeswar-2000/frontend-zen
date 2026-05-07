@@ -1,0 +1,106 @@
+<!Doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./index.css"/>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="color-container">
+                     Select your favourite color 
+                    <input type="color" value="skyblue" id="color1"/>
+                    <input type="color" value="pink" id="color2"/>
+            </div>
+
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account</p>
+            <hr/>
+            <form class="form-container" id="form">
+                <div class="form-control">
+                    <input type="text" placeholder="firstname" id="firstname" class="input"/>
+                    <p id="firstname-alert" class="error"></p>
+                </div>
+
+                <div class="form-control"> 
+                    <input type="text" placeholder="lastname" id="lastname" class="input"/>
+                    <p id="lastname-alert" class="error"></p>
+                </div>
+
+                <div class="form-control">
+                    <input type="text" placeholder="Mobile number" class="input"  id="mobile" min="10" max="10"/>
+                    <p id="mobile-alert" class="error"></p>
+                </div>
+
+                <div class="form-control">
+                    <input type="email" placeholder="Email" class="input" id="email" />
+                    <p id="email-alert" class="error"></p>
+                </div>
+
+                <div class="form-control">
+                    <input type="password" placeholder="Password" class="input" id="password"/>
+                    <p id="password-alert" class="error"></p>
+                </div>
+
+                <div class="form-control">
+                    <input type="password" placeholder="Confirm Password" class="input" id="confirm-password"/>
+                    <p id="password2-alert" class="error"></p>
+                </div>
+
+                <div class="branch-dob">
+                    <div class="branch-container"> 
+                         Select your branch 
+                        <select value="CSE">
+                            <option value="CSE">CSE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="EEE">EEE</option>
+                        </select>
+                    </div> 
+
+                    <div class="date-of-birth">
+                        <label for="dob">DOB</label>
+                        <input type="date" placeholder="dd/mm/yyyy" id="dob"/>
+                         <p id="dob-alert" class="error"></p>
+                    </div>
+                    
+                </div>
+
+                <div class="form-control gender-container">
+                     Select your gender
+                      
+                    <div>
+                        <label for="Male">Male</label>
+                        <input type="radio" name="gender" id="Male" value="male"/>
+                    </div>
+                    <div>
+                        <label for="Female" >Female</label>
+                        <input type="radio" name="gender" id="Female" value="female"/>
+                    </div>
+                     
+                    <div>
+                        <label for="Other">Other</label>
+                        <input type="radio" name="gender" id="Other" value="other"/>
+                    </div>
+                     
+                </div>
+                <p id="gender-alert" class="error"></p>
+
+                <div class="address-container">
+                    <label for="address">
+                        Enter you Address
+                    </label>
+                    <textarea id="address" rows="5"></textarea>
+                    <p id="address-alert" class="error"></p>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="terms"/>
+                    <label for="terms">I accept the terms of use & privacy policy.</label>
+                    <p id="terms-alert" class="error"></p>
+                </div>
+                <button type="submit" class="sign-up-button">Sign Up</button>
+            </form>
+
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
