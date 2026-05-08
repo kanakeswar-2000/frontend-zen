@@ -1,0 +1,59 @@
+.App{
+  padding:20px;
+  display:flex;
+  justify-content:space-evenly;
+}
+.strikethrough{
+  font-size:20px;
+  text-decoration:line-through;
+}
+.loading-view{
+  height:200px;
+  width:200px;
+   
+  background-color:green;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.circular-view{
+   
+  border-radius:100px;
+   
+}
+.rounded-corners-view{
+  
+  margin-bottom:20px;
+  border-radius:20px;
+  
+}
+
+.standard-view{
+   
+  margin-bottom:20px;
+   
+}
+
+.each-alert{
+  color:white;
+  padding:10px;
+  width:400px;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+.success{
+  background-color:#28a745;
+   
+}
+
+.warning{
+  background-color:#ffc107;
+  
+}
+.info{
+  background-color: #17a2b8;
+}
+.error{
+  background-color:#dc3545;
+}

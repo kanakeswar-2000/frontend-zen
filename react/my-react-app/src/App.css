@@ -1,0 +1,23 @@
+.footer{
+  background-color: rgb(201, 28, 161);
+  padding:10px;
+  color:white;
+}
+.navbar{
+  background-color: blueviolet;
+  padding:10px;
+  color:white;
+}
+.profile-container{
+  background-color: antiquewhite;
+  padding:20px;
+  display:flex;
+  width:400px
+}
+.profile-image{
+  height:100px;
+  width:100px;
+}
+.profile-info{
+  padding-left:10px;
+}

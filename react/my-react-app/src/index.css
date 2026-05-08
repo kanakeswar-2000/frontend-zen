@@ -1,0 +1,17 @@
+.primary{
+  background-color:blue;
+  color:white;
+  border:none;
+  padding:5px;
+  margin:20px;
+}
+.secondary{
+  background-color:bisque;
+  border:none;
+  padding:5px;
+  margin:20px;
+}
+.outline{
+  padding:5px;
+  margin:20px;
+}
