@@ -1,3 +1,4 @@
+// 1 hr
 console.log("-----1.------")
 function greatestNumber(a,b){
     if(a>b){
@@ -144,3 +145,8 @@ function isEven(num){
     return num%2===0?"Even":"Odd"
 }
 console.log(isEven(-243.5))
+
+/* 
+    multiple values in case (switch statement) used with "or" condition
+    wrong condition while checking isAlpha
+*/
