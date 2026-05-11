@@ -1,0 +1,9 @@
+.users-list{
+    display:flex;
+    flex-wrap:wrap;
+    list-style-type:none;
+}
+.search-name{
+    padding:10px;
+    width:50%;
+}
