@@ -26,7 +26,7 @@ const Users=()=>{
 }
 export default Users
 
-/* Mistakes :
+/* Learning Points :
     1.data fetching directly implemented in useEffect callback function 
     2.await not used for response onbject
 */

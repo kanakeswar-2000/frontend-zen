@@ -10,6 +10,6 @@ const EachPost=(props)=>{
 }
 export default EachPost
 
-/* Mistakes 
+/* Learning Points
     1.Didn't remember slice method to limit sentence chars
 */
