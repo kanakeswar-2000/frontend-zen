@@ -1,9 +1,14 @@
-import {useParams} from "react-router-dom"
+import {useParams,useNavigate} from "react-router-dom"
 import {useState,useEffect} from "react"
+import {ThreeDots} from "react-loader-spinner"
 const PokemonDetails=()=>{
     const [pokemonDetails,setPokemonDetails]=useState({})
     const [loading,setLoading]=useState(true)
+
     const {id}=useParams()
+
+
+    const navigate=useNavigate()
 
     useEffect(()=>{
         const getData=async()=>{
@@ -15,10 +20,13 @@ const PokemonDetails=()=>{
         getData()
     },[id])
 
+    const onClickGoBack=()=>{
+        navigate("/")
+    }
     console.log(pokemonDetails)
     const {height,weight,abilities,stats,types,name}=pokemonDetails
 
-    return<div>{loading ? <p>Loading </p>: (
+    return<div>{loading ?  <ThreeDots height="80" width="80" color="blue"/>: (
     <div className="p-4">
         <h1 className="font-bold text-center p-4">{name}</h1>
         <div className="flex justify-center">
@@ -51,6 +59,7 @@ const PokemonDetails=()=>{
             </ul>
             </div>
         </div>
+        <button className="border p-2 m-2" onClick={onClickGoBack}>Go Back</button>
     </div>) }
     </div>
 }
