@@ -6,51 +6,50 @@ class Car{
     constructor(isRunning,speed){
         this.isRunning=isRunning;
         this.speed=speed
+        this.accelerate=document.getElementById("accelerate")
+        this.decelerate=document.getElementById("decelerate")
+
+        this.button=document.getElementById("button");
+        this.status=document.getElementById("status")
     }
     changeIsRunning(){
-        let accelerate=document.getElementById("accelerate")
-        let decelerate=document.getElementById("decelerate")
-
-        let button=document.getElementById("button");
-        let status=document.getElementById("status")
+         
         this.isRunning=!this.isRunning
         let buttonText=this.isRunning?"Stop":"Start"
-        button.textContent=buttonText
+        this.button.textContent=buttonText
         let statusText=this.isRunning?"Running":"Stopped"
-        status.textContent=statusText
+        this.status.textContent=statusText
         if (!this.isRunning){
             this.speed=0
-            accelerate.style.backgroundColor="";
-            decelerate.style.backgroundColor="";
-            button.style.backgroundColor="green"
+            this.accelerate.style.backgroundColor="";
+            this.decelerate.style.backgroundColor="";
+            this.button.style.backgroundColor="green"
         }
         else{
-            accelerate.style.backgroundColor="blue"
-            button.style.backgroundColor="red"
+            this.accelerate.style.backgroundColor="blue"
+            this.button.style.backgroundColor="red"
         }
     }
     increaseSpeed(){
-        let decelerate=document.getElementById("decelerate")
-        let status=document.getElementById("status")
+         
         if (this.isRunning) {
             let updatedspeed=this.speed + 10
             this.speed=updatedspeed
-            status.textContent=`Car Speed is ${updatedspeed} kmph`
-            decelerate.style.backgroundColor="blue"
+            this.status.textContent=`Car Speed is ${updatedspeed} kmph`
+            this.decelerate.style.backgroundColor="blue"
         }
     }
     decreaseSpeed(){
-        let status=document.getElementById("status")
-        let decelerate=document.getElementById("decelerate")
+        
         if (this.speed>=10){
             let updatedspeed=this.speed - 10
             this.speed=updatedspeed
             if (this.speed===0){
-                status.textContent="Running"
-                decelerate.style.backgroundColor=""
+                this.status.textContent="Running"
+                this.decelerate.style.backgroundColor=""
             }
             else {
-                status.textContent=`Car Speed is ${updatedspeed} kmph`
+                this.status.textContent=`Car Speed is ${updatedspeed} kmph`
             }
         }
     }
