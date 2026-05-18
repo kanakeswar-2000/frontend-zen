@@ -35,7 +35,7 @@ class Car{
         if (this.isRunning) {
             let updatedspeed=this.speed + 10
             this.speed=updatedspeed
-            this.status.textContent=`Car Speed is ${updatedspeed} kmph`
+            this.status.textContent=`Running with speed at ${updatedspeed} kmph`
             this.decelerate.style.backgroundColor="blue"
         }
     }
@@ -49,7 +49,7 @@ class Car{
                 this.decelerate.style.backgroundColor=""
             }
             else {
-                this.status.textContent=`Car Speed is ${updatedspeed} kmph`
+                this.status.textContent=`Running with speed at ${updatedspeed} kmph`
             }
         }
     }
