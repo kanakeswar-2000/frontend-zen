@@ -41,7 +41,7 @@ const User=()=>{
              <img src={avatar_url} alt="avatar" className="image"/>
              <p>{bio}</p>
              <p>{name}</p>
-             <p>Repos : {public_repos}</p>
+             <p>Public-Repos : {public_repos}</p>
              <p>Followers : {followers}</p>
         </div> 
          
