@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="./index.css"/>
+    </head>
+    <body>
+        <div class="app-container">
+            <div>
+                <button class="button" id="deposit-btn">Deposit</button>
+                <button class="button" id="withdraw-btn">Withdrawal</button>
+            </div>
+            <div>
+                <button class="button" id="balance-btn" onclick="onClickShowBalance()">Show balance</button>
+                <button class="button" id="history-btn">History</button>
+            </div>
+
+            <div id="deposit-con" class="deposit-con">
+                <input type="text" id="deposit-amount" placeholder="Deposit Amount"/>
+                <button onclick="handleDeposit()" >Submit</button>
+            </div>
+
+            <div id="withdraw-con" class="withdraw-con">
+                <input type="text" id="withdrawal-amount" placeholder="Withdrawal Amount"/>
+                <button onclick="handleWithdrawal()" >Submit</button>
+            </div>
+
+            <div id="balance-con" class="balance-con">
+                 <p id="balance-amount">Current Balance : Rs.0</p>
+            </div>
+
+            <div id="history-con" class="history-con">
+                
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>

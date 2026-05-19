@@ -1,0 +1,21 @@
+.button{
+    background-color:blue;
+    color:white;
+    padding:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+    border-radius:10px;
+    border:0px;
+}
+.deposit-con{
+    display:none;
+}
+.withdraw-con{
+    display:none;
+}
+.balance-con{
+    display:none;
+}
+.history-con{
+    display:none;
+}
