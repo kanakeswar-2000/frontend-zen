@@ -1,11 +1,13 @@
 .button{
-    background-color:blue;
-    color:white;
     padding:10px;
     margin-right:10px;
     margin-bottom:10px;
     border-radius:10px;
     border:0px;
+}
+.active-button{
+    background-color:blue;
+    color:white;
 }
 .deposit-con{
     display:none;
