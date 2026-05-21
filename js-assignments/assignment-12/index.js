@@ -9,6 +9,8 @@ let historyConEle=document.getElementById("history-con")
 let table=document.getElementById("table")
 let tableBody=document.getElementById("table-body")
 let emptyHistory=document.getElementById("empty-view")
+let depositError=document.getElementById("deposit-error")
+let withdrawError=document.getElementById("withdraw-error")
 
 depositBtnEle.addEventListener("click",()=>{
     // button styling
@@ -130,12 +132,30 @@ class Atm{
 const atm= new Atm("",0,[])
 
 function handleDeposit(){
-    depositConEle.classList.add("deposit-con")
-    atm.makeDeposit()
+    let deposit_value=parseInt(atm.depositEle.value)
+    
+    if(atm.depositEle.value===""){
+        depositError.textContent="Enter the Amount"
+    }
+    else if(deposit_value<0){
+        depositError.textContent="Invalid Value"
+    }else{
+        depositConEle.classList.add("deposit-con")
+        atm.makeDeposit()
+    }
 }
 function handleWithdrawal(){
-    withdrawConEle.classList.add("withdraw-con")
-    atm.makeWithDrawal()
+    let withdraw_value=parseInt(atm.withdrawalEle.value)
+    if(atm.withdrawalEle.value===""){
+        withdrawError.textContent="Enter the Amount"
+    }
+    else if(withdraw_value>atm.balance){
+        withdrawError.textContent="InSufficient Balance"
+    }
+    else{
+        withdrawConEle.classList.add("withdraw-con")
+        atm.makeWithDrawal()
+    }
 }
 
 function onClickShowBalance(){
