@@ -6,6 +6,9 @@ let balanceBtnEle=document.getElementById("balance-btn")
 let balanceConEle=document.getElementById("balance-con")
 let historyBtnEle=document.getElementById("history-btn")
 let historyConEle=document.getElementById("history-con")
+let table=document.getElementById("table")
+let tableBody=document.getElementById("table-body")
+let emptyHistory=document.getElementById("empty-view")
 
 depositBtnEle.addEventListener("click",()=>{
     // button styling
@@ -19,6 +22,8 @@ depositBtnEle.addEventListener("click",()=>{
     withdrawConEle.classList.add("withdraw-con")
     balanceConEle.classList.add("balance-con")
     historyConEle.classList.add("history-con")
+
+    tableBody.innerHTML=""
 })
 withdrawBtnEle.addEventListener("click",()=>{
     withdrawBtnEle.classList.add("active-button")
@@ -30,6 +35,8 @@ withdrawBtnEle.addEventListener("click",()=>{
     withdrawConEle.classList.remove("withdraw-con")
     balanceConEle.classList.add("balance-con")
     historyConEle.classList.add("history-con")
+     
+    tableBody.innerHTML=""
 })
 balanceBtnEle.addEventListener("click",()=>{
     balanceBtnEle.classList.add("active-button")
@@ -41,6 +48,8 @@ balanceBtnEle.addEventListener("click",()=>{
     withdrawConEle.classList.add("withdraw-con")
     balanceConEle.classList.remove("balance-con")
     historyConEle.classList.add("history-con")
+
+    tableBody.innerHTML=""
 })
 historyBtnEle.addEventListener("click",()=>{
     historyBtnEle.classList.add("active-button")
@@ -52,7 +61,36 @@ historyBtnEle.addEventListener("click",()=>{
     withdrawConEle.classList.add("withdraw-con")
     balanceConEle.classList.add("balance-con")
     historyConEle.classList.remove("history-con")
+    
+    const transactions=atm.transactionHistory
+    if (transactions.length>0){
+        table.classList.remove("table-view")
+        emptyHistory.classList.add("empty-view")
+        for (let each_transaction of transactions){
+           let row= document.createElement("tr")
+            let TT=document.createElement("td")
+            let TA=document.createElement("td")
+            let TB=document.createElement("td")
+            TT.textContent=each_transaction.transactionType
+            TA.textContent=each_transaction.transactionAmount
+            TB.textContent=each_transaction.balance
+                
+            row.appendChild(TT)
+            row.appendChild(TA)
+            row.appendChild(TB)
+            table.appendChild(row)
+        }
+         
+    }
 })
+class Transaction {
+    constructor(transactionType,transactionAmount,balance){
+        this.transactionType=transactionType
+        this.transactionAmount=transactionAmount
+        this.balance=balance
+    }
+}
+
 class Atm{
     constructor(mode,balance,transactionHistory){
         this.mode=mode
@@ -63,16 +101,25 @@ class Atm{
         this.balanceEle=document.getElementById("balance-amount")
     }
     makeDeposit(){
-         
-        let updatedBalance=this.balance + parseInt(this.depositEle.value)
+        this.mode="DEPOSIT"
+        let enteredAmount=parseInt(this.depositEle.value)
+        let updatedBalance=this.balance + enteredAmount
         this.balance=updatedBalance
         this.balanceEle.textContent= "Current Balance Rs." + updatedBalance
+        const newTransaction=new Transaction(this.mode,enteredAmount,this.balance)
+        const transactions=[...this.transactionHistory,newTransaction]
+        this.transactionHistory=transactions
         this.depositEle.value=""
     }
     makeWithDrawal(){
-        let updatedBalance=this.balance - parseInt(this.withdrawalEle.value)
+        this.mode="WITHDRAW"
+        let enteredAmount=parseInt(this.withdrawalEle.value)
+        let updatedBalance=this.balance - enteredAmount
         this.balance=updatedBalance
         this.balanceEle.textContent="Current Balance Rs." + updatedBalance
+        const newTransaction=new Transaction(this.mode,enteredAmount,this.balance)
+        const transactions=[...this.transactionHistory,newTransaction]
+        this.transactionHistory=transactions
         this.withdrawalEle.value=""
     }
     showBalance(){
