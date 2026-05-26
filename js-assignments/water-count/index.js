@@ -7,20 +7,34 @@ for (let i=0;i<no_of_glasses;i=i+1){
     let glass=document.createElement("li")
     glass.classList.add("glass")
     glass.textContent="250 ml"
+    glass.id=i;
     glasses_container.appendChild(glass) 
     glasses.push(glass)
 }
 
 glasses.forEach((glass,i)=>{
     glass.addEventListener("click",()=>{
-        glass.classList.toggle("filled")
-        updateWaterLevel()
+        updateWaterLevel(i)
 
     })
 })
 
-function updateWaterLevel(){
-    let filledGlasses=document.querySelectorAll(".glass.filled").length ;
+function updateFilled(n){
+    for (let i=0 ;i<no_of_glasses;i=i+1){
+        let glass=document.getElementById(i)
+        if (i<=n){
+             
+            glass.classList.add("filled")
+        }
+        else{
+            glass.classList.remove("filled")
+        }
+    }
+}
+
+function updateWaterLevel(i){
+    updateFilled(i)
+    filledGlasses=i+1 ;
     console.log(filledGlasses)
 
     let filledPercent=(filledGlasses/no_of_glasses) *100;
