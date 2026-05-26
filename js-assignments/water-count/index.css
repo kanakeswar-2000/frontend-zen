@@ -9,13 +9,19 @@
     height:100%;
 }
 .empty-container{
-    height:50%;
-
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
 .filled-container{
-    height:50%;
+    height:0%;
     background-color: blue;
     border-radius:0px 0px 30px 30px;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .glasses{
     list-style-type:none;
@@ -27,8 +33,12 @@
     height:150px;
     border:1px solid black;
     border-radius:0px 0px 10px 10px;
-     
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
 }
 .filled{
     background-color: blue;
+    color:white;
 }
