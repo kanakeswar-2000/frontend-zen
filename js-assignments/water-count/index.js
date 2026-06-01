@@ -56,3 +56,8 @@ function updateWaterLevel(i){
     }
      
 }
+
+/* Learning Points :
+    1.if condition wrong in updateFilled function
+    2.if condition not identified in updateWaterLevel function
+*/
